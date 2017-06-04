@@ -1,0 +1,30 @@
+.nav-inspector{
+  position: fixed;
+  top: 90px;
+  right: 40px;
+}
+.nav-inspector__item{
+  width: 6px;
+  height: 6px;
+  border-radius:50%;
+  background: white;
+  margin-bottom: 15px;
+  cursor: pointer;
+  position: relative;
+  &:hover .nav-inspector__item-border{
+    transform: scale(1);
+    transition: .3s;
+  }
+}
+.nav-inspector__item-border{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border:1px solid white;
+  position: absolute;
+  top:-5px;
+  left: -5px;
+  transform: scale(0);
+  transition: .3s;
+}

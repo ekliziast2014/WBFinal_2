@@ -1,0 +1,150 @@
+.prices {
+  background: linear-gradient(
+                to bottom, #f9b43b 0%,
+                  #eb8c38 40%,
+                  #eb8c38 60%, #eb8c38 60%,
+                #f9b43b 100%);
+  display: flex;
+  align-items: center;
+}
+.slide-wrap{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.composition{
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 5px;
+  background: #e35028;
+  position: absolute;
+  top: 20px;
+  transition: background(.3s);
+  &:hover{
+    background: #c1401e;
+    transition:.3s;
+    & .composition_detail {
+      display: block;
+    }
+  }
+}
+.composition__title{
+  font-family:Gagalin-Regular;
+  font-size: 14px;
+  color: white;
+}
+.composition_detail{
+  display: none;
+  opacity: .9;
+  width: 270px;
+  height: 390px;
+  background: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 90px;
+  padding: 20px;
+}
+.composition-show__line{
+  display: block;
+  margin-bottom: 15px;
+}
+.composition-show__line_item-text{
+  margin-left: 25px;
+  padding: 10px 0;
+}
+.slide-svicher__prev{
+  position: absolute;
+  transform: rotate(90deg);
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  left: -20px;
+  transition: .3s;
+  &:hover {
+    transform: rotate(90deg);
+    width: 40px;
+    transition: .3s;
+  }
+}
+.slide-svicher__next {
+  position: absolute;
+  transform: rotate(270deg);
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  right: -40px;
+  transition: .3s;
+  &:hover {
+    transform: rotate(270deg) ;
+    width: 40px;
+    transition: .3s;
+  }
+}
+.burger-image{
+  width: 54%;
+  height:315px;
+  margin:auto 0;
+}
+.burger-image{
+  background: url("../../img/Menu/black-burger.png")no-repeat;
+}
+.burger-description{
+  width: 48%;
+  min-height: 475px;
+}
+.burger-description__item-title{
+  font-family: Gagalin-Regular;
+  font-size:72px;
+  line-height: 70px;
+  color: white;
+  margin-bottom: 35px;
+}
+.burger-description__item-text{
+  font-family: Ubuntu-Light;
+  font-size: 14px;
+  line-height: 1.8;
+  color: white;
+  margin-bottom: 25px;
+}
+.burger-description__item-action{
+  display: inline-block;
+  vertical-align: bottom;
+  color: #e35028;
+  font-family:Gagalin-Regular;
+}
+.burger-description__item-action_price{
+  font-size: 72px;
+  line-height: 68px;
+}
+.burger-description__item-action_currency{
+  font-size: 30px;
+  line-height: 28px;
+}
+.burger-description__item-action_button{
+  color: white;
+  position: static;
+  margin-left: 35px;
+  font-family:Ubuntu-Medium;
+}
+.burger-callories{
+  position: absolute;
+  opacity:.5;
+  bottom:0;
+  left: 0;
+}
+.burger-callories__sum,
+.burger-callories__text{
+  font-family:Gagalin-Regular;
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  bottom:10px;
+  left: 13px;
+}
+.burger-callories__text{
+  font-size: 14px;
+  bottom:-15px;
+}

@@ -1,0 +1,139 @@
+*{
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.42;
+  position: relative;
+  font-family: Ubuntu-Light;
+  color: #2f3234;
+}
+.wrapper{
+  position: relative;
+  overflow: hidden;
+  min-width: 960px;
+}
+.section{
+  height: 100vh;
+  min-height: 650px;
+  border:1px solid black;
+}
+.start{
+  background: url("../img/start-bg.png") no-repeat;
+  background-position: 10% 50%;
+  background-size: cover;
+}
+.container{
+  margin: 0 auto;
+  width: 940px;
+}
+
+.header{
+  padding-top: 15px;
+  position: relative;
+}
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.header__logo{
+  float: left;
+  width: 32%;
+}
+.header__menu{
+  float: left;
+  width: 65%;
+  padding-top: 20px;
+}
+.nav{
+  display: inline-block;
+  vertical-align: middle;
+
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-right: 15px;
+  float: left;
+  transform: translate(300% -50%);
+  &:after {
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(300%,-50%);
+    margin-right: 15px;
+  }
+}
+
+.nav__link{
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: Ubuntu-Medium;
+  color: white;
+  text-transform: uppercase;
+}
+.nav__link_order,
+.burger-description__item-action_button{
+  padding: 10px;
+  background-color: #e45028;
+  border-radius: 5px;
+  position: absolute;
+  top: 28px;
+  right: 15px;
+  transition: .3s;
+  &:hover{
+    background: #c1401e;
+    transition:.3s;
+  }
+}
+.promo
+{
+  position: absolute;
+  top: 325px;
+  transform: translateY(-50%);
+}
+.promo__start-img{
+  float: left;
+}
+.promo__start-text{
+  float: left;
+  padding-top: 55px;
+  width: 50%;
+  margin-left: 10px;
+}
+.start-text__top,
+.teem-title {
+  font-family: Gagalin-Regular;
+  font-size: 72px;
+  color: #f9b43b;
+  margin-bottom: 12px;
+}
+.start-text__bottom{
+  display: inline-block;
+  font-family: Lifehack-Medium;
+  color: white;
+  font-size: 65px;
+  line-height: 1;
+  margin: 0;
+}
+
+
+

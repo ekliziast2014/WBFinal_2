@@ -1,0 +1,47 @@
+.we{
+  background: url("../../img/we-bg.png") no-repeat;
+  background-position: 0% 47%;
+  background-size: cover;
+}
+.slogan__text{
+  margin: 0;
+  padding-top: 125px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family:Gagalin-Regular;
+  font-size: 72px;
+  color: #2f3234;
+  margin-bottom: 80px;
+
+}
+.strenghts{
+  width: 100%;
+
+}
+.strenghts-item{
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+  margin-left: 40px;
+  vertical-align: text-top;
+  &:first-child{
+    margin-left: 0;
+  }
+}
+.strenghts-item__img{
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.strenghts-item__description-top{
+  font-family:Lifehack-Medium;
+  color: #2f3234;
+  font-size: 24px;
+  margin: 0 0 20px 0;
+}
+.strenghts-item__description-bottom{
+  font-family:Ubuntu-Light;
+  color: #848382;
+  font-size: 14px;
+  line-height: 27px;
+  margin: 0;
+}
